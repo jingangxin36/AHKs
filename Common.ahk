@@ -44,6 +44,12 @@ return
 
 :*:gut::git
 
+:*:pum::push origin master
+
+:*:pue::push origin engine2
+
+:*:gut::git
+
 ::;gm::jingangxin36@gmail.com
 
 ; quick run
