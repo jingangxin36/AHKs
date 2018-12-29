@@ -40,6 +40,8 @@ return
 
 :*B0:''::{left 1}
 
+:*B0:()::{left 1}
+
 :*:gut::git
 
 ::;gm::jingangxin36@gmail.com
@@ -50,7 +52,7 @@ return
 
 !g::Run www.google.com
 ^+c::Run D:\shortcut\Cmder.lnk
-^+v::Run D:\shortcut\Visual Studio Code.lnk
+^+o::Run D:\shortcut\Visual Studio Code.lnk
 ^+s::Run D:\shortcut\CoCo.lnk
 ^+p::Run D:\shortcut\PDFXCview.lnk
 ^+x::Run D:\shortcut\XMind 8 Update 8.lnk
@@ -59,3 +61,7 @@ return
 
 ;input hotkey
 ::dui::✔
+
+; Key re-mapping
+^Space::^b
++Space::^+v
