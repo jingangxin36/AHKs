@@ -42,14 +42,6 @@ return
 
 :*B0:()::{left 1}
 
-:*:gut::git
-
-:*:pum::push origin master
-
-:*:pue::push origin engine2
-
-:*:gut::git
-
 ::;gm::jingangxin36@gmail.com
 
 ; quick run
@@ -68,6 +60,16 @@ return
 ;input hotkey
 ::dui::✔
 
-; Key re-mapping
+; <Key re-mapping>
 ^Space::^b
 +Space::^+v
+
+; <Git Hotkey>
+:*:gut::git
+:*:gti::git
+:*:pushm::push origin master
+:*:pushe::push origin engine2
+:*:coi::commit -m ""{left 1}
+:*:pulle::pull origin engine2
+:*:pullr::pull origin engine2 --rebase
+:*:gi t::git
