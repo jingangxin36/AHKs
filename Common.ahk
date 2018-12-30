@@ -62,7 +62,7 @@ return
 
 ; <Key re-mapping>
 ^Space::^b
-+Space::^+v
+^!::^+v; todo 
 
 ; <Git Hotkey>
 :*:gut::git
