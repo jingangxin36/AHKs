@@ -62,14 +62,14 @@ return
 
 ; <Key re-mapping>
 ^Space::^b
-^!::^+v; todo 
+;todo ^!::^+v 
 
 ; <Git Hotkey>
 :*:gut::git
 :*:gti::git
 :*:pushm::push origin master
 :*:pushe::push origin engine2
-:*:coi::commit -m ""{left 1}
+:*:git com::git commit -m ""{left 1}
 :*:pulle::pull origin engine2
 :*:pullr::pull origin engine2 --rebase
 :*:gi t::git
