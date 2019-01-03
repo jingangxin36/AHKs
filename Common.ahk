@@ -49,13 +49,14 @@ return
 ; C:\ProgramData\Microsoft\Windows\Start Menu\Programs
 
 !g::Run www.google.com
-^+c::Run D:\shortcut\Cmder.lnk
+^+/::Run D:\shortcut\Cmder.lnk
 ^+o::Run D:\shortcut\Visual Studio Code.lnk
 ^+s::Run D:\shortcut\CoCo.lnk
 ^+p::Run D:\shortcut\PDFXCview.lnk
 ^+x::Run D:\shortcut\XMind 8 Update 8.lnk
 ^+\::Run D:\shortcut\cmakeall.lnk
 ^+w::Run D:\shortcut\WeChat.lnk
+^+c::Run D:\shortcut\BCompare.lnk
 
 ;input hotkey
 ::dui::✔
