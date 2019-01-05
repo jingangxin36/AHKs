@@ -60,6 +60,7 @@ return
 
 ;input hotkey
 ::dui::✔
+:*:ltodo:: [leeyoung] TODO:
 
 ; <Key re-mapping>
 ^Space::^b
@@ -71,8 +72,11 @@ return
 :*:pushm::push origin master
 :*:pullm::pull origin master
 ::pullrm::pull origin master --rebase
+::pullre::pull origin engine2--rebaese
 :*:pushe::push origin engine2
-:*:git com::git commit -m ""{left 1}
+:*:comi::commit -m ""{left 1}
 :*:pulle::pull origin engine2
-::pullre::pull origin engine2 --rebase
 :*:gi t::git
+:*:reabse::rebase
+:*:re2::rebase engine2
+:*:coe2::co engine2
