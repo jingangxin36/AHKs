@@ -56,7 +56,7 @@ return
 ^+x::Run D:\shortcut\XMind 8 Update 8.lnk
 ^+\::Run D:\shortcut\cmakeall.lnk
 ^+w::Run D:\shortcut\WeChat.lnk
-^+c::Run D:\shortcut\BCompare.lnk
+;^+c::Run D:\shortcut\BCompare.lnk
 
 ;input hotkey
 ::dui::✔
@@ -69,8 +69,10 @@ return
 :*:gut::git
 :*:gti::git
 :*:pushm::push origin master
+:*:pullm::pull origin master
+::pullrm::pull origin master --rebase
 :*:pushe::push origin engine2
 :*:git com::git commit -m ""{left 1}
 :*:pulle::pull origin engine2
-:*:pullr::pull origin engine2 --rebase
+::pullre::pull origin engine2 --rebase
 :*:gi t::git
