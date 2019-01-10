@@ -57,6 +57,7 @@ return
 ^+\::Run D:\shortcut\cmakeall.lnk
 ^+w::Run D:\shortcut\WeChat.lnk
 ;^+c::Run D:\shortcut\BCompare.lnk
+^+}::Run D:\shortcut\WinShell_d.lnk
 
 ;input hotkey
 ::dui::✔
@@ -72,7 +73,7 @@ return
 :*:pushm::push origin master
 :*:pullm::pull origin master
 ::pullrm::pull origin master --rebase
-::pullre::pull origin engine2--rebaese
+::pullre::pull origin engine2 --rebase
 :*:pushe::push origin engine2
 :*:comi::commit -m ""{left 1}
 :*:pulle::pull origin engine2
