@@ -80,4 +80,6 @@ return
 :*:gi t::git
 :*:reabse::rebase
 :*:re2::rebase engine2
-:*:coe2::co engine2
+:*:co2::co engine2
+:*:>/p::>/d/patch/.patch{left 6}
+:*:gitst::git st
