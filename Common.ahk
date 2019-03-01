@@ -3,22 +3,7 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
-::;d::
-FormatTime, DateString, , <yyyy-MM-dd>
-SendInput %DateString%
-return
-
-::;t::
-FormatTime, TimeString, , <yyyy-MM-dd HH:mm>
-SendInput %TimeString%
-return
-
-::;s::
-FormatTime, TimeString, , <HH:mm>
-SendInput %TimeString%
-return
-
-:*://::
+:*:,,::
 FormatTime, DateString, , <yyyy-MM-dd>
 SendInput %DateString%
 return
@@ -62,6 +47,7 @@ return
 ;input hotkey
 ::dui::✔
 :*:ltodo:: [leeyoung] TODO:
+:*:lsay:: [leeyoung] :
 
 ; <Key re-mapping>
 ^Space::^b
@@ -83,3 +69,4 @@ return
 :*:co2::co engine2
 :*:>/p::>/d/patch/.patch{left 6}
 :*:gitst::git st
+::cp::cherry-pick
