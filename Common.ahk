@@ -51,7 +51,7 @@ return
 
 ; <Key re-mapping>
 ^Space::^b
-;todo ^!::^+v 
+<#Tab::F2
 
 ; <Git Hotkey>
 :*:gut::git
