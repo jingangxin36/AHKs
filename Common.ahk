@@ -21,6 +21,8 @@ return
 
 :*:\\::「」{left 1}
 
+:*:[[::[]{left 1}
+
 :*B0:""::{left 1}
 
 :*B0:''::{left 1}
@@ -37,7 +39,6 @@ return
 ^+/::Run D:\shortcut\Cmder.lnk
 ^+o::Run D:\shortcut\Visual Studio Code.lnk
 ^+s::Run D:\shortcut\CoCo.lnk
-^+p::Run D:\shortcut\PDFXCview.lnk
 ^+x::Run D:\shortcut\XMind 8 Update 8.lnk
 ^+\::Run D:\shortcut\cmakeall.lnk
 ^+w::Run D:\shortcut\WeChat.lnk
