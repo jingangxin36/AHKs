@@ -21,6 +21,12 @@ return
 
 :*:\\::「」{left 1}
 
+:*:;d::「delete」
+
+:*:;f::「fix」
+
+:*:;o::「optimize」
+
 :*:[[::[]{left 1}
 
 :*B0:""::{left 1}
