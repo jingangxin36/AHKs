@@ -77,3 +77,8 @@ return
 :*:>/p::>/d/patch/.patch{left 6}
 :*:gitst::git st
 ::cp::cherry-pick
+
+
+
+XButton1::!Left
+XButton2::!Right
