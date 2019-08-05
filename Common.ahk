@@ -13,6 +13,11 @@ FormatTime, TimeString, , <yyyy-MM-dd HH:mm>
 SendInput %TimeString%
 return
 
+:*:]]::
+FormatTime, TimeString, , liaoyyyyMMddHHmm
+SendInput %TimeString%
+return
+
 :R:;1::# 
 :R:;2::## 
 :R:;3::### 
@@ -26,6 +31,14 @@ return
 :*:;f::「fix」
 
 :*:;o::「optimize」
+
+:*:;i::「type: int」
+
+:*:;s::「type: string」
+
+:*:;a::「type: array」
+
+:*:;t::「type: table」
 
 :*:[[::[]{left 1}
 
@@ -44,7 +57,6 @@ return
 !g::Run www.google.com
 ^+/::Run D:\shortcut\Cmder.lnk
 ^+o::Run D:\shortcut\Visual Studio Code.lnk
-^+s::Run D:\shortcut\CoCo.lnk
 ^+x::Run D:\shortcut\XMind 8 Update 8.lnk
 ^+\::Run D:\shortcut\cmakeall.lnk
 ^+w::Run D:\shortcut\WeChat.lnk
@@ -66,14 +78,19 @@ return
 :*:pushm::push origin master
 :*:pullm::pull origin master
 ::pullrm::pull origin master --rebase
-::pullre::pull origin engine2 --rebase
-:*:pushe::push origin engine2
+::pullr2::pull origin engine2 --rebase
+:*:push2::push origin engine2
+::pullr1::pull origin engine2_dev_101 --rebase
+:*:push1::push origin engine2_dev_101
 :*:comi::commit -m ""{left 1}
-:*:pulle::pull origin engine2
+:*:pull2::pull origin engine2
+:*:pull1::pull origin engine2_dev_101
 :*:gi t::git
 :*:reabse::rebase
 :*:re2::rebase engine2
 :*:co2::co engine2
+:*:co1::co engine2_dev_101
+:*:re1::rebase engine2_dev_101
 :*:>/p::>/d/patch/.patch{left 6}
 :*:gitst::git st
 ::cp::cherry-pick
