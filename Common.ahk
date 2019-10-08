@@ -14,7 +14,7 @@ SendInput %TimeString%
 return
 
 :*:]]::
-FormatTime, TimeString, , liaoyyyyMMddHHmm
+FormatTime, TimeString, , yyyyMMddHHmm
 SendInput %TimeString%
 return
 
@@ -78,9 +78,9 @@ return
 :*:pushm::push origin master
 :*:pullm::pull origin master
 ::pullrm::pull origin master --rebase
-::pullr2::pull origin engine2 --rebase
+:*:pullr2::pull origin engine2 --rebase
 :*:push2::push origin engine2
-::pullr1::pull origin engine2_dev_101 --rebase
+:*:pullr1::pull origin engine2_dev_101 --rebase
 :*:push1::push origin engine2_dev_101
 :*:comi::commit -m ""{left 1}
 :*:pull2::pull origin engine2
