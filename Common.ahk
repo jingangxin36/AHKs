@@ -13,8 +13,8 @@ FormatTime, TimeString, , <yyyy-MM-dd HH:mm>
 SendInput %TimeString%
 return
 
-:*:]]::
-FormatTime, TimeString, , yyyyMMddHHmm
+:*:~~::
+FormatTime, TimeString, , MM/dd
 SendInput %TimeString%
 return
 
@@ -24,47 +24,13 @@ return
 :R:;4::#### 
 :R:;5::##### 
 
-:*:\\::「」{left 1}
-
-:*:;d::「delete」
-
-:*:;f::「fix」
-
-:*:;o::「optimize」
-
-:*:;i::「type: int」
-
-:*:;s::「type: string」
-
-:*:;a::「type: array」
-
-:*:;t::「type: table」
-
-:*:[[::[]{left 1}
-
 :*B0:""::{left 1}
 
 :*B0:''::{left 1}
 
 :*B0:()::{left 1}
 
-::;gm::jingangxin36@gmail.com
-
-; quick run
-; C:\Users\User\AppData\Roaming\Microsoft\Windows\Start Menu\Programs
-; C:\ProgramData\Microsoft\Windows\Start Menu\Programs
-
-!g::Run www.google.com
-^+/::Run D:\shortcut\Cmder.lnk
-^+o::Run D:\shortcut\Visual Studio Code.lnk
-^+x::Run D:\shortcut\XMind 8 Update 8.lnk
-^+\::Run D:\shortcut\cmakeall.lnk
-^+w::Run D:\shortcut\WeChat.lnk
-;^+c::Run D:\shortcut\BCompare.lnk
-^+}::Run D:\shortcut\WinShell_d.lnk
-
 ;input hotkey
-::dui::✔
 :*:ltodo:: [leeyoung] TODO:
 :*:lsay:: [leeyoung] :
 
@@ -75,27 +41,22 @@ return
 ; <Git Hotkey>
 :*:gut::git
 :*:gti::git
-:*:pushm::push origin master
-:*:pullm::pull origin master
-::pullrm::pull origin master --rebase
-:*:pullr2::pull origin engine2 --rebase
+:*:pullr2::pull origin engine2 --rebase{left 9}
 :*:push2::push origin engine2
-:*:pullr1::pull origin engine2_dev_101 --rebase
-:*:push1::push origin engine2_dev_101
+:*:push1::push origin engine2_dev_10
+:*:push4::push origin engine2_dev_10
 :*:comi::commit -m ""{left 1}
+:*:coma::commit --amend
 :*:pull2::pull origin engine2
-:*:pull1::pull origin engine2_dev_101
+:*:pullre::https://github.com/blockmangame/blockmango-client/compare/engine2...?{left 1}
 :*:gi t::git
 :*:reabse::rebase
 :*:re2::rebase engine2
 :*:co2::co engine2
-:*:co1::co engine2_dev_101
-:*:re1::rebase engine2_dev_101
 :*:>/p::>/d/patch/.patch{left 6}
 :*:gitst::git st
-::cp::cherry-pick
-
-
+::gcp::cherry-pick
+:*:sf::function(.*)
 
 XButton1::!Left
 XButton2::!Right
