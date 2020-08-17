@@ -41,6 +41,8 @@ return
 ; <Git Hotkey>
 :*:gut::git
 :*:gti::git
+:*:pushm::push origin master
+:*:pullrm::pull origin master --rebase
 :*:pullr2::pull origin engine2 --rebase{left 9}
 :*:push2::push origin engine2
 :*:push1::push origin engine2_dev_10
