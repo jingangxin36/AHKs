@@ -8,15 +8,16 @@ FormatTime, DateString, , <yyyy-MM-dd>
 SendInput %DateString%
 return
 
-:*:;;::
-FormatTime, TimeString, , <yyyy-MM-dd HH:mm>
+:*:;;1::
+FormatTime, TimeString, , 3080_yyyy_MM_dd_HH_mm_ss
 SendInput %TimeString%
 return
 
-:*:~~::
-FormatTime, TimeString, , MM/dd
+:*:;;2::
+FormatTime, TimeString, , 2080_yyyy_MM_dd_HH_mm_ss
 SendInput %TimeString%
 return
+
 
 :R:;1::# 
 :R:;2::## 
@@ -24,11 +25,12 @@ return
 :R:;4::#### 
 :R:;5::##### 
 
-:*B0:""::{left 1}
 
-:*B0:''::{left 1}
+; :*B0:""::{left 1}
 
-:*B0:()::{left 1}
+; :*B0:''::{left 1}
+
+; :*B0:()::{left 1}
 
 ;input hotkey
 :*:ltodo:: [leeyoung] TODO:
@@ -58,7 +60,15 @@ return
 :*:>/p::>/d/patch/.patch{left 6}
 :*:gitst::git st
 ::gcp::cherry-pick
-:*:sf::function(.*)
+; :*:sf::function(.*)
 
 XButton1::!Left
 XButton2::!Right
+
+^`::
+if not WinExist("Windows PowerShell")
+    Run "C:\Users\maxyuanli\Desktop\wt.exe.lnk"
+else
+    WinActivate
+return
+
