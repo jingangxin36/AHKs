@@ -3,21 +3,19 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
-:*:,,::
+:*:]d::
 FormatTime, DateString, , <yyyy-MM-dd>
 SendInput %DateString%
 return
 
-:*:;;1::
-FormatTime, TimeString, , 3080_yyyy_MM_dd_HH_mm_ss
-SendInput %TimeString%
+:*:]a::
+FormatTime, TimeString, , yyyy_MM_dd_HHss
+SendInput maxyuanli/%TimeString%
 return
 
-:*:;;2::
-FormatTime, TimeString, , 2080_yyyy_MM_dd_HH_mm_ss
-SendInput %TimeString%
-return
+:*:adbcmd::adb shell "am broadcast -a android.intent.action.RUN -e cmd ''"{left 2}
 
+:*:adbcc::am broadcast -a android.intent.action.RUN -e cmd ''{left 1}
 
 :R:;1::# 
 :R:;2::## 
@@ -26,15 +24,14 @@ return
 :R:;5::##### 
 
 
-; :*B0:""::{left 1}
 
-; :*B0:''::{left 1}
-
-; :*B0:()::{left 1}
 
 ;input hotkey
-:*:ltodo:: [leeyoung] TODO:
-:*:lsay:: [leeyoung] :
+:*:hlodm::update TestBuildHLOD map
+:*://1:://maxyuanli: BEGIN Add CJ API, 
+:*://2:://maxyuanli: END Add CJ API
+:*://3:://maxyuanli: BEGIN, 
+:*://4:://maxyuanli: END 
 
 ; <Key re-mapping>
 ^Space::^b
@@ -43,27 +40,18 @@ return
 ; <Git Hotkey>
 :*:gut::git
 :*:gti::git
-:*:pushm::push origin master
-:*:pullrm::pull origin master --rebase
-:*:pullr2::pull origin engine2 --rebase{left 9}
-:*:push2::push origin engine2
-:*:push1::push origin engine2_dev_10
-:*:push4::push origin engine2_dev_10
 :*:comi::commit -m ""{left 1}
 :*:coma::commit --amend
 :*:pull2::pull origin engine2
 :*:pullre::https://github.com/blockmangame/blockmango-client/compare/engine2...?{left 1}
 :*:gi t::git
 :*:reabse::rebase
-:*:re2::rebase engine2
-:*:co2::co engine2
 :*:>/p::>/d/patch/.patch{left 6}
 :*:gitst::git st
 ::gcp::cherry-pick
 ; :*:sf::function(.*)
 
-XButton1::!Left
-XButton2::!Right
+:*:svn com::svn commit -m "[手动]解决编译错误"{left 15}
 
 ^`::
 if not WinExist("Windows PowerShell")
